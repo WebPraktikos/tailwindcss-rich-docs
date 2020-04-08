@@ -1,0 +1,5 @@
+.vscode
+/node_modules/
+/temp/
+package-lock.json
+public/build.css
