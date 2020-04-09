@@ -3,7 +3,7 @@ Tailwind CSS Rich Docs
 
 **Still at an early stage of development and not ready for use.**
 
-This is a Tailwind CSS plugin that adds styles to the row HTML code inteded for documentation type of content.
+This is a Tailwind CSS plugin that adds styles to the row HTML code intended for documentation type of content.
 
 [Demo](https://universal-resume.netlify.com/)
 
