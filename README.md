@@ -3,7 +3,7 @@ Tailwind CSS Rich Docs
 
 **Important:** Still at an early stage of development and not ready for use.
 
-This is a Tailwind CSS plugin that adds styles to the raw HTML code (without styles or classes) containing documentation type of content.
+This is a Tailwind CSS plugin that adds CSS to the raw HTML code of a documentation page (without styles or classes).
 
 [Demo](https://tailwindcss-rich-docs.netlify.com/)
 
