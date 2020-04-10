@@ -42,3 +42,14 @@ Add the `rich-docs` class:
   <!-- markdown to html output, maybe -->
 </div>
 ```
+
+Embedding Videos
+---------
+
+To embed video iframe or any iframe, wrap the iframe with div. Then, add the`iframe-parent` class to that div. Next, specify the aspect ratio under the `style` attribute. Finally, remove width, height, and other styles from the iframe.
+```html
+<div class="iframe-parent" style="--aspect-ratio-horizontal: 16; --aspect-ratio-vertical: 9;">
+  <!-- Example iframe -->
+  <iframe src="https://www.youtube.com/embed/MURPf_6r8z4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+```
