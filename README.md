@@ -16,3 +16,29 @@ Add the following code to the `<head>` HTML element:
 ```html
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
 ```
+
+Setup
+---------
+
+Install the tailwindcss-rich-docs npm package:
+```
+npm install tailwindcss-rich-docs
+```
+
+Include it in your `tailwind.config.js`:
+```
+module.exports = {
+  theme: {},
+  variants: {},
+  plugins: [
+    require("tailwindcss-rich-docs")
+  ]
+};
+```
+
+Add the `rich-docs` class:
+```html
+<div class="rich-docs">
+  <!-- markdown to html output, maybe -->
+</div>
+```
