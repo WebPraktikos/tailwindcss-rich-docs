@@ -20,7 +20,7 @@ Add the following code to the `<head>` HTML element:
 Setup
 ---------
 
-Install the tailwindcss-rich-docs npm package:
+Install the `tailwindcss-rich-docs` npm package:
 ```
 npm install tailwindcss-rich-docs
 ```
