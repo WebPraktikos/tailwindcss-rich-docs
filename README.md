@@ -8,7 +8,7 @@ This is a Tailwind CSS plugin that adds styles (CSS) to the documentation pageâ€
 [Demo](https://tailwindcss-rich-docs.netlify.com/)
 
 **How to use it?**  
-Add the `rich-docs` class to the element which wraps raw HTML code.
+Add the `rich-docs` class to the element which wraps raw HTML code (without styles).
 
 **How to use the same font as on the demo site?**  
 Add the following code to the `<head>` HTML element:
