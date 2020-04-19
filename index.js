@@ -25,7 +25,8 @@ module.exports = plugin.withOptions(function (options) {
           "rd-7": "1.75rem",
         },
         lineHeight: {
-          "rd-normal": "1.4375rem" // 23px
+          "rd-normal": "1.4375rem", // 23px
+          "rd-title": "1.38"
         },
       },
 
@@ -36,15 +37,15 @@ module.exports = plugin.withOptions(function (options) {
         "padding-right": defaultTheme.spacing[4],
         "margin-left": "auto",
         "margin-right": "auto",
-        "margin-top": defaultTheme.spacing[20],
-        "margin-bottom": defaultTheme.spacing[20],
+        "margin-top": "64px",
+        "margin-bottom": "64px",
         "counter-reset": "counter-h2",
         "h1:not(.own-style)": {
-          "margin-bottom": defaultTheme.spacing[12],
-          "font-size": defaultTheme.fontSize["4xl"],
+          "margin-bottom": "40px",
+          "font-size": "23px",
           "font-weight": defaultTheme.fontWeight["bold"],
           "color": defaultTheme.colors.gray[900],
-          "line-height": defaultTheme.lineHeight["none"],
+          "line-height": theme("lineHeight.rd-title"),
         },
         "> ol:not(.own-style)": {
           "counter-reset": "counter-1",
@@ -55,8 +56,11 @@ module.exports = plugin.withOptions(function (options) {
         "> ol a:not(.own-style)": {
           "color": defaultTheme.colors.blue[700],
         },
+        "> ol ol:not(.own-style)": {
+          "margin-top": defaultTheme.spacing[2],
+        },
         "> ol li:not(.own-style)": {
-          "margin-bottom": defaultTheme.spacing[2],
+          "margin-top": defaultTheme.spacing[2],
         },
         "> ol li:not(.own-style)::before": {
           "content": "counter(counter-1) '. '",
@@ -90,8 +94,8 @@ module.exports = plugin.withOptions(function (options) {
         "hr:not(.own-style)": {
           "margin-left": "auto",
           "margin-right": "auto",
-          "margin-top": defaultTheme.spacing[10],
-          "margin-bottom": defaultTheme.spacing[10],
+          "margin-top": "28px",
+          "margin-bottom": "28px",
           "border-top-width": "1px",
           "max-width": "7.875rem",
         },
@@ -177,16 +181,15 @@ module.exports = plugin.withOptions(function (options) {
         },
         "> ul:not(.own-style)": {
           "margin-bottom": theme("spacing['rd-3.5']"),
+        },
+        "> ul > li:not(.own-style)": {
+          "margin-bottom": theme("spacing[2]"),
           "font-size": theme("fontSize.base"),
           "color": defaultTheme.colors.gray[700],
           "line-height": theme("lineHeight.rd-normal"),
-          "list-style-type": defaultTheme.listStyleType["disc"],
-          "list-style-position": "inside",
-        },
-        "ul > li:not(.own-style)": {
-          "margin-bottom": theme("spacing[2]"),
           "margin-left": "1em",
           "list-style-position": "outside",
+          "list-style-type": defaultTheme.listStyleType["disc"],
         },
         "img:not(.own-style)": {
           "max-width": "100%",
@@ -239,8 +242,8 @@ module.exports = plugin.withOptions(function (options) {
       })
     },
     variants: {
-      textColor: ["responsive", "hover", "focus", "group-hover"],
-      backgroundColor: ["responsive", "hover", "focus", "even", "odd"],
+      textColor: ["responsive", "group-hover"],
+      backgroundColor: ["responsive", "even", "odd"],
     }
   }
 });
