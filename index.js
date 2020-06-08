@@ -2,12 +2,12 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 const plugin = require('tailwindcss/plugin');
 
 module.exports = plugin.withOptions(function (options) {
-  return function ({ addUtilities, variants, theme }) {
-    const newUtilities = {
+  return function ({ addComponents, theme }) {
+    const newStyles = {
       '.rich-docs': theme("richDocs")
     }
 
-    addUtilities(newUtilities);
+    addComponents(newStyles);
   }
 }, function (options) {
 
