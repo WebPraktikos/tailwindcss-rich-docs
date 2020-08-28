@@ -1,7 +1,7 @@
 Tailwind CSS Rich Docs
 ---------
 
-**Important:** Still at an early stage of development and not ready for use.
+**Important:** This project is at an early stage of development and not ready for use.
 
 This is a Tailwind CSS plugin that creates styled documentation page from row HTML code.
 
