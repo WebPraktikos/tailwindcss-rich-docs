@@ -1,9 +1,9 @@
 Tailwind CSS Rich Docs
 ---------
 
-**Important:** This project is at an early stage of development and not ready for use.
+**Attention:** This project is at an early stage of development and not ready for use.
 
-This is a Tailwind CSS plugin that creates styled documentation page from row HTML code.
+tailwindcss-rich-docs is a Tailwind CSS plugin that provieds `rich-docs` class which can be used to style row (vanilla) HTML code with documentation type of content.
 
 [Demo](https://tailwindcss-rich-docs.netlify.com/)
 
