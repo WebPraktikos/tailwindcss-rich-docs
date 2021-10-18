@@ -1,14 +1,14 @@
 Tailwind CSS Rich Docs
 ---------
 
-**Attention:** This project is at an early stage of development and not ready for use.
+**Attention:** This project is at an early stage of development.
 
-tailwindcss-rich-docs is a Tailwind CSS plugin that provieds `rich-docs` class which can be used to style row (vanilla) HTML code with documentation type of content.
+tailwindcss-rich-docs is a Tailwind CSS plugin that provieds `rich-docs` class which can be used to style row (vanilla) HTML code with the documentation type of content.
 
 [Demo](https://tailwindcss-rich-docs.netlify.com/)
 
 **How to use it?**  
-Add the `rich-docs` class to the element which wraps raw HTML code (without styles).
+Add the `rich-docs` class to the container of the raw HTML code (without styles).
 
 **How to use the same font as on the demo site?**  
 Add the following code to the `<head>` HTML element:
